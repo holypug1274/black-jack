@@ -28,7 +28,7 @@ export class Match {
                     hand.makeBet(player, Bets.NORMAL, choose);
                 }
                 this.playHand(player, hand);
-                hand.done();
+                hand.markAsDone();
                 Logger.SCREEN_logPlayerPlay(this.dealer, player, hand);
                 this.readInputGoNextHand();
             }

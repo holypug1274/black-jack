@@ -12,7 +12,7 @@ export class Hand {
     private bets: Bet[] = [];
     private hasSplitted: boolean;
     private lastChoose: Choices;
-    private _done: boolean;
+    private done: boolean;
     private active: boolean = false;
 
     public setActive(active: boolean): void {
@@ -187,13 +187,12 @@ export class Hand {
         player.addRemoveMoney(-bet.getCostAmount());
     }
 
-    //TODO to remove?
-    public done(): void {
-        this._done = true;
+    public markAsDone(): void {
+        this.done = true;
     }
 
     public isDone(): boolean {
-        return this._done;
+        return this.done;
     }
 
     public isTie(dealer: Dealer): boolean {

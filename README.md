@@ -1,3 +1,7 @@
+# BLACK JACK
+
+For a better experience of playing be sure to have at least half screen with the console opened
+
 # REQUIREMENTS
 
 -   Node Js (https://nodejs.org/en/) - v14.18.1
